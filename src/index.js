@@ -37,7 +37,7 @@ const DraggableBoard = ({
   onDragStart = () => { },
   onDragEnd = () => { },
   style: boardStyle,
-  horizontal = true,
+  horizontal = false,
 }) => {
   const [forceUpdate, setForceUpdate] = useState(false);
   const [hoverComponent, setHoverComponent] = useState(null);
