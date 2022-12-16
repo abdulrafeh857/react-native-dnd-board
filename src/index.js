@@ -257,6 +257,7 @@ const DraggableBoard = ({
   return (
     <PanGestureHandler
       onGestureEvent={onPanGestureEvent}
+      waitFor={scrollViewRef}
       onHandlerStateChange={onHandlerStateChange}>
       <Animated.View style={[style.container, boardStyle]}>
         <ScrollView
