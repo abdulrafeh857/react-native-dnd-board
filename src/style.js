@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { Platform, StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   container: {
@@ -7,7 +7,9 @@ export default StyleSheet.create({
   hoverComponent: {
     position: 'absolute',
     left: 0,
-    right: 0,
+    right: 0, 
+    zIndex: 999,
+    elevation: (Platform.OS === 'android') ? 50 : 0
   },
   invisible: {
     opacity: 0,
